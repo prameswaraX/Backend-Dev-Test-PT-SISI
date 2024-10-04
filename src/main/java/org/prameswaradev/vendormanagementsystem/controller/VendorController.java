@@ -5,7 +5,6 @@ import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.prameswaradev.vendormanagementsystem.dto.VendorDto;
@@ -120,12 +119,6 @@ public class VendorController {
                             )
                     )
             ),
-            parameters = {
-                    @Parameter(
-                            name = "id",
-                            required = true,
-                            example = "3f6d8f5c-1f5b-4dbf-8f98-4dddf7f7a4b9"
-                    )},
             responses = {
                     @ApiResponse(
                             responseCode = "200",
